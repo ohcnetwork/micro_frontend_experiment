@@ -1,0 +1,10 @@
+{
+  "name": "Plugin A",
+  "entry": "/plugin-a.js",
+  "routes": [
+    {
+      "path": "/plugin-a",
+      "component": "PluginAPage"
+    }
+  ]
+}

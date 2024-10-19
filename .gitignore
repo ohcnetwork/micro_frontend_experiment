@@ -1,0 +1,14 @@
+# ignore all node_modules in all subdirectories
+**/node_modules
+
+# ignore all package-lock.json in all subdirectories
+**/package-lock.json
+
+# ignore all dist in all subdirectories
+**/dist
+
+# ignore all build in all subdirectories
+**/build
+
+# ignore all .vscode in all subdirectories
+**/vscode
