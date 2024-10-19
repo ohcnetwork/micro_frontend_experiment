@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import PluginAPage from "./PluginAPage";
 
 const PluginA = {
@@ -9,7 +8,5 @@ const PluginA = {
 };
 
 (window as any).PluginA = PluginA;
-(window as any).React = React;
-(window as any).ReactDOM = ReactDOM;
 
 export default PluginA;

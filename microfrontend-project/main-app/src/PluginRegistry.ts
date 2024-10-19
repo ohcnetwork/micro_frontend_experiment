@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom";
 import { Plugin, PluginConfig } from "./types";
 
 class PluginRegistry {
@@ -6,6 +8,10 @@ class PluginRegistry {
   async loadPlugins(configs: PluginConfig[]) {
     for (const config of configs) {
       try {
+        // Provide React and ReactDOM to the plugin
+        (window as any).React = React;
+        (window as any).ReactDOM = ReactDOM;
+
         await this.loadScript(config.url);
         const pluginModule = (window as any)[config.name];
         if (!pluginModule) {
